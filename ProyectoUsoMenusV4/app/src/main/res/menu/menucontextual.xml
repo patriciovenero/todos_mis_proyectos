@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/nombre"
+        android:icon="@drawable/menu"
+        app:showAsAction="ifRoom"
+        android:title="Ver Nombre" />
+    <item android:id="@+id/carrera"
+        android:icon="@drawable/informacion"
+        app:showAsAction="ifRoom"
+        android:title="Ver Carrera" />
+    <item android:id="@+id/semestre"
+        android:icon="@drawable/menu__1_"
+        app:showAsAction="ifRoom"
+        android:title="Ver Semestre" />
+    <item android:id="@+id/email"
+        android:icon="@drawable/email"
+        app:showAsAction="ifRoom"
+        android:title="Ver Email" />
+
+</menu>

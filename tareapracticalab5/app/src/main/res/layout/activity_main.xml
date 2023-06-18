@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Promedio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promedio de laboratorio:"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/prolab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica calificada 1:"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/pracca1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica calificada 2:"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/pracca2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica calificada 3:"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/pracca3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica calificada 4:"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/pracca4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <Button
+        android:id="@+id/profi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Promedio" />
+
+    <EditText
+        android:id="@+id/promediofi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imagen_resultado"
+        android:layout_width="384dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/profi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+
+</LinearLayout>
