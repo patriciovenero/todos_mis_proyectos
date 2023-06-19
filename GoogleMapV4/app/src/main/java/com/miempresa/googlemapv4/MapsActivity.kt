@@ -1,6 +1,8 @@
 package com.miempresa.googlemapv4
 
 import android.content.Intent
+
+
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -64,11 +66,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarker
         mMap.getUiSettings().setZoomControlsEnabled(true)
         mMap.getUiSettings().setCompassEnabled(true)
         mMap.getUiSettings().setCompassEnabled(true)
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
             == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
         } else {
-            requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 123);
+            requestPermissions(arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), 123);
         }
 
         when (destino) {
