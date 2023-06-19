@@ -93,9 +93,13 @@ class listadoPeliculas : AppCompatActivity() {
                 }
                 return true
             }
-        })  
+        })
         btnsalir.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        btnagregar.setOnClickListener {
+            val intent = Intent(this, verPelicula::class.java)
             startActivity(intent)
         }
     }
